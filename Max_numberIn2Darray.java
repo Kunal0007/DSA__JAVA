@@ -14,7 +14,7 @@ public class Max_numberIn2Darray {
     }
 
     private static int max(int[][] arr) {
-        int max = arr[0][0];
+        int max = Integer.MIN_VALUE;
         for (int[] ints : arr) {
             for (int anInt : ints) {
                 if (anInt > max) {
