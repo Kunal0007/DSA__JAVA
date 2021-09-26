@@ -2,7 +2,7 @@ package com.company.DSA__JAVA;
 
 public class Binary_Search {
     public static void main(String[] args) {
-        int[] arr = {23,56,3,78,9,25};
+        int[] arr = {3, 13, 25, 46, 68, 72, 89, 90};
         int target = 25;
         System.out.println(binarysearch(arr, target));
     }
