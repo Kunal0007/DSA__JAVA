@@ -1,5 +1,7 @@
 package com.company.DSA__JAVA;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class StringInJava {
@@ -22,5 +24,12 @@ public class StringInJava {
         System.out.println("Kunal");
         System.out.println(new  int[]{1,2,3,4,5});
         System.out.println(Arrays.toString(new  int[]{1,2,3,4,5}));
+
+        //String Concatenation:
+        System.out.println("K" + 'a');
+        System.out.println('a' + 1); // == 98
+        System.out.println((char)('a' + 1));
+        System.out.println("K" + 1);
+        System.out.println("K" + new ArrayList<Integer>());
     }
 }
