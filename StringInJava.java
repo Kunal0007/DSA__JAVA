@@ -25,11 +25,17 @@ public class StringInJava {
         System.out.println(new  int[]{1,2,3,4,5});
         System.out.println(Arrays.toString(new  int[]{1,2,3,4,5}));
 
-        //String Concatenation:
+        // String Concatenation:
         System.out.println("K" + 'a');
         System.out.println('a' + 1); // == 98
         System.out.println((char)('a' + 1));
         System.out.println("K" + 1);
         System.out.println("K" + new ArrayList<Integer>());
+
+        // StringBuilder
+        StringBuilder builder = new StringBuilder();
+        builder.append("Kunal");
+        System.out.println(builder);
+
     }
 }
