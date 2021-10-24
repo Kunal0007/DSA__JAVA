@@ -3,6 +3,7 @@ package com.company.DSA__JAVA;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 public class StringInJava {
     public static void main(String[] args) {
@@ -37,5 +38,16 @@ public class StringInJava {
         builder.append("Kunal");
         System.out.println(builder);
 
+        // String Methods
+        String name = "Kunal Patil Hello World!!";
+        System.out.println(name.charAt(0)); // K
+        System.out.println(name.toLowerCase()); // kunal patil hello world!!
+        System.out.println(name.toUpperCase()); // KUNAL PATIL HELLO WORLD!!
+        System.out.println(name.length());
+        System.out.println(Arrays.toString(name.toCharArray()));
+        System.out.println(name.indexOf('l'));
+        System.out.println(name.lastIndexOf('l'));
+        System.out.println(Arrays.toString(name.split(" ")));
+        System.out.println("          Kunal    ".strip());
     }
 }
