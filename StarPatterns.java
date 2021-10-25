@@ -47,13 +47,7 @@ public class StarPatterns {
 
     static void pattern5(int n) {
         for (int i = 1; i <= 2 * n - 1; i++) {
-            int c;
-            if (i > n){
-                c = 2 * n - i;
-            }
-            else {
-                c = i;
-            }
+            int c = i > n ? 2 * n - i : i;
             for (int j = 1; j <= c; j++) {
                 System.out.print("* ");
             }
