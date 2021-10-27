@@ -4,7 +4,8 @@ public class NumberPattern {
     public static void main(String[] args) {
 //        pattern1(4);
 //        pattern2(4);
-        pattern3(4);
+//        pattern3(4);
+        pattern4(4);
     }
 
     static void pattern1(int n) {
@@ -55,6 +56,17 @@ public class NumberPattern {
             for (int j = 2; j <= col; j++) {
                 System.out.print(j + " ");
             }
+            System.out.println();
+        }
+    }
+
+    static void pattern4(int n) {
+        int col = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i ; j++) {
+                System.out.print(col + j + " ");
+            }
+            col += i + 1;
             System.out.println();
         }
     }
