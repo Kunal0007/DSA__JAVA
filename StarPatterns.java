@@ -9,7 +9,8 @@ public class StarPatterns {
 //        pattern5(4);
 //        pattern6(4);
 //        pattern7(4);
-        pattern8(4);
+//        pattern8(4);
+        pattern9(5);
     }
 
     static void pattern1(int n) {
@@ -99,6 +100,16 @@ public class StarPatterns {
             }
             for (int j = 2; j <= col; j++) {
                 System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern9(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+            for (int j = 0; j < 2 * n - 1; j++) {
+                int index = n - Math.min(Math.min(i, j), Math.min(2 * n - 2 - i, 2 * n - 2 - j));
+                System.out.print(index + " ");
             }
             System.out.println();
         }
