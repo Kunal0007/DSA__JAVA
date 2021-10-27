@@ -3,7 +3,8 @@ package com.company.DSA__JAVA;
 public class NumberPattern {
     public static void main(String[] args) {
 //        pattern1(4);
-        pattern2(4);
+//        pattern2(4);
+        pattern3(4);
     }
 
     static void pattern1(int n) {
@@ -39,5 +40,22 @@ public class NumberPattern {
         }
 
         return fac;
+    }
+
+    static void pattern3(int n) {
+        for (int i = 1; i <= 2 * n - 1 ; i++) {
+            int col = i > n ? 2 * n - i : i;
+            int space = n - col;
+            for (int j = 1; j <= space; j++) {
+                System.out.print("  ");
+            }
+            for (int j = col; j >= 1 ; j--) {
+                System.out.print(j + " ");
+            }
+            for (int j = 2; j <= col; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }
