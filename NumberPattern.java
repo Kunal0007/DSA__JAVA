@@ -6,7 +6,8 @@ public class NumberPattern {
 //        pattern2(4);
 //        pattern3(4);
 //        pattern4(5);
-        pattern6(4);
+//        pattern6(4);
+        pattern7(4);
     }
 
     static void pattern1(int n) {
@@ -77,6 +78,15 @@ public class NumberPattern {
             for (int j = 0; j < 2 * n - 1; j++) {
                 int index = n - Math.min(Math.min(i, j), Math.min(2 * n - 2 - i, 2 * n - 2 - j));
                 System.out.print(index + " ");
+            }
+            System.out.println();
+        }
+    }
+    
+    static void pattern7(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i + 1 ; j++) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
