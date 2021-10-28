@@ -5,7 +5,8 @@ public class NumberPattern {
 //        pattern1(4);
 //        pattern2(4);
 //        pattern3(4);
-        pattern4(5);
+//        pattern4(5);
+        pattern6(4);
     }
 
     static void pattern1(int n) {
@@ -67,6 +68,16 @@ public class NumberPattern {
                 System.out.print(col + j + "  ");
             }
             col += i + 1;
+            System.out.println();
+        }
+    }
+
+    static void pattern6(int n) {
+        for (int i = 0; i < 2 * n - 1; i++) {
+            for (int j = 0; j < 2 * n - 1; j++) {
+                int index = n - Math.min(Math.min(i, j), Math.min(2 * n - 2 - i, 2 * n - 2 - j));
+                System.out.print(index + " ");
+            }
             System.out.println();
         }
     }
