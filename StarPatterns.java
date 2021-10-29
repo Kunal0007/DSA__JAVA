@@ -11,8 +11,9 @@ public class StarPatterns {
 //        pattern7(4);
 //        pattern8(4);
 //        pattern9(4);
-        pattern10(4);
-//        pattern11(4);
+//        pattern10(4);
+        pattern11(4);
+//        pattern12(4);
     }
 
     static void pattern1(int n) {
@@ -125,6 +126,20 @@ public class StarPatterns {
     }
 
     static void pattern11(int n) {
+        for (int i = 1; i <= 2 * n ; i++) {
+            int space = i > n ? 2 * n - i  : i - 1;
+            int star = i > n ? i - n : n - i + 1;
+            for (int j = 1; j <= space ; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= star  ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern12(int n) {
         for (int i = 1; i <= 2 * n - 1; i++) {
             int star = i > n ? 2 * n - i : i;
             int space = n - star;
