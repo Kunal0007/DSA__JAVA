@@ -6,11 +6,11 @@ public class StarPatterns {
 //        pattern2(4);
 //        pattern3(4);
 //        pattern4(4);
-//        pattern5(4);
+        pattern5(4);
 //        pattern6(4);
 //        pattern7(4);
 //        pattern8(4);
-        pattern9(5);
+//        pattern9(4);
     }
 
     static void pattern1(int n) {
@@ -41,15 +41,6 @@ public class StarPatterns {
     }
 
     static void pattern4(int n) {
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    static void pattern5(int n) {
         for (int i = 1; i <= 2 * n - 1; i++) {
             int c = i > n ? 2 * n - i : i;
             for (int j = 1; j <= c; j++) {
@@ -58,7 +49,19 @@ public class StarPatterns {
             System.out.println();
         }
     }
-
+    
+    static void pattern5(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int space = 1; space <= n - i; space++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    
     static void pattern6(int n) {
         for (int i = 1; i <= 2 * n - 1; i++) {
             int star = i > n ? 2 * n - i : i;
@@ -82,23 +85,6 @@ public class StarPatterns {
                 System.out.print(j + " ");
             }
             for (int j = 2; j <= i; j++) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
-        }
-    }
-
-    static void pattern8(int n) {
-        for (int i = 1; i <= 2 * n - 1 ; i++) {
-            int col = i > n ? 2 * n - i : i;
-            int space = n - col;
-            for (int j = 1; j <= space; j++) {
-                System.out.print("  ");
-            }
-            for (int j = col; j >= 1 ; j--) {
-                System.out.print(j + " ");
-            }
-            for (int j = 2; j <= col; j++) {
                 System.out.print(j + " ");
             }
             System.out.println();
