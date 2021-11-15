@@ -1,6 +1,6 @@
 package com.company.DSA__JAVA;
 
-// Time Complexity is O(N * log(N))
+// Time Complexity is O(N * log(log(N)))
 
 public class PrimeNo_Seive {
     public static void main(String[] args) {
