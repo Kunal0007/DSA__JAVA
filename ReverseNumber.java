@@ -8,6 +8,16 @@ public class ReverseNumber {
         fun2(5);
         System.out.println();
         fun3(5);
+        System.out.println();
+        reversedigit(1345);
+    }
+
+    private static void reversedigit(int n) {
+        if (n == 0){
+            return;
+        }
+        System.out.print(n % 10);
+        reversedigit(n / 10);
     }
 
     private static void fun3(int n) {
