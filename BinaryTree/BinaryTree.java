@@ -1,4 +1,4 @@
-package com.company.DSA__JAVA;
+package com.company.DSA__JAVA.BinaryTree;
 
 class Node {
     int value;
