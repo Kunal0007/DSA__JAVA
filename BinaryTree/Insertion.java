@@ -13,7 +13,7 @@ public class Insertion {
         tree.traversalInorder(root);
     }
 
-    private static Node insertion(Node root, int value) {
+    public static Node insertion(Node root, int value) {
         if (root == null){
             root = new Node(value);
             return root;
