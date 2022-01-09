@@ -19,7 +19,7 @@ public class Graphbasic {
         adjMatrix[SecondV][firstV] = false;
     }
 
-   public void printList(){
+   public void printGraph(){
        for (int i = 0; i < vertices; i++) {
            for (int j = 0; j < vertices; j++) {
                if (adjMatrix[i][j]){
@@ -42,7 +42,7 @@ public class Graphbasic {
         G.addEdge(2, 0);
         G.addEdge(2, 3);
 
-        G.printList();
+        G.printGraph();
 
     }
 
