@@ -4,6 +4,11 @@ class Node {
     int value;
     Node left, right;
 
+    public Node(){
+        this.value = 0;
+        this.left = this.right = null;
+    }
+
     public Node(int value){
         this.value = value;
         this.left = this.right = null;
