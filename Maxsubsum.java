@@ -9,7 +9,7 @@ public class Maxsubsum {
     private static int maxsum(int[] arr) {
         int res = arr[0];
         int maxEnd = arr[0];
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             maxEnd = Math.max(maxEnd + arr[i], arr[i]);
             res = Math.max(res, maxEnd);
         }
